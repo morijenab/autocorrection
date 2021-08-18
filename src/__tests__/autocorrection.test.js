@@ -4,8 +4,7 @@ import {AutoCorrection} from '../AutoCorrection'
 
 const setUp=() =>{
    const {container} = render(<AutoCorrection />)
-    return container
-    
+    return container    
 }
 
 
