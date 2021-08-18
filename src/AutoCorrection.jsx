@@ -10,13 +10,11 @@ export const AutoCorrection = () => {
 const ref= useRef()
 const changeHandler=(e)=>{
 const value=e.target.value;
-console.log(value)
         
     if(value.includes(" ")){
         const arr = value.split(" ")
         arr.forEach((element , index)=> {
             if(Object.keys(correction).includes(element)){
-                console.log("boobs")
                 arr[index]=correction[element];
             }
             ref.current.value =arr.join(" ")
