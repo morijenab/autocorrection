@@ -23,6 +23,6 @@ const value=e.target.value;
 }
 
     return (
-        <textarea ref={ref} onChange={changeHandler} name="text-editor" id="text-edior" cols="30" rows="10" autoFocus></textarea>
+        <textarea style={{fontSize: '20px'}} ref={ref} onChange={changeHandler} name="text-editor" id="text-edior" cols="30" rows="10" autoFocus></textarea>
     )
 }
