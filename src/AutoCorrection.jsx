@@ -9,8 +9,7 @@ const correction={
 export const AutoCorrection = () => {
 const ref= useRef()
 const changeHandler=(e)=>{
-const value=e.target.value;
-        
+const value=e.target.value;        
     if(value.includes(" ")){
         const arr = value.split(" ")
         arr.forEach((element , index)=> {
@@ -20,11 +19,7 @@ const value=e.target.value;
             ref.current.value =arr.join(" ")
             
         });
-
     }
-
-
-
 }
 
     return (
