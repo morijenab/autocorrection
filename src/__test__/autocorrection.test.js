@@ -24,6 +24,12 @@ describe('autoCorrection test', () => {
         fireEvent.change(container.firstChild,{target: {value: 'realy '}})       
         expect(container.firstChild.value).toBe("really ")        
     })
+
+    test('should change increament to increment', () => {
+            const container=setUp()
+        fireEvent.change(container.firstChild,{target: {value: 'increament '}})       
+        expect(container.firstChild.value).toBe("increment ")        
+    })
     
     test('should NOT touch the an space', () => {
         const container=setUp()
